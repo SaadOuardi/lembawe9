@@ -1,0 +1,38 @@
+.items-container {
+    transition: transform 0.3s ease-in-out;
+}
+
+.items-container.left {
+    transform: translateX(-100%);
+}
+
+.items-container.right {
+    transform: translateX(100%);
+}
+
+.product-card {
+    position: relative;
+    cursor: pointer;
+
+    .card-img-container {
+        overflow: hidden;
+        img.card-img-top {
+            object-fit: cover;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .card-img-container:hover{
+        img.card-img-top {
+            transform: scale(1.1);
+        }
+    }
+    .product-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;    
+    }
+}
+
+.product-card:hover {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}

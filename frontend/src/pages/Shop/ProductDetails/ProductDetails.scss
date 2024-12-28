@@ -1,0 +1,136 @@
+main.ProductDetails{
+    .main-product-details{
+        gap: 50px;
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        button.back-btn {
+            background-color: black !important;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+        .product-image,
+        .product-details{
+            width: 550px;
+        }
+        .product-image{
+            background-color: var(--main-bg);
+            box-shadow: 2px 2px 10px rgb(142, 142, 142);
+            overflow: hidden;
+            border-radius: 16px;
+            img{
+                height: 90%;
+                width: 90%;
+                transition: all 0.3s linear;
+            }
+        }
+        .product-image:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .product-details {
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 20px;
+            .product-data{
+                display: flex;
+                flex-direction: column;
+            }
+            .product-name{
+                h1{
+                    font-size: 35px;
+                }
+            }
+            .product-price-product-reviews{
+                justify-content: space-between !important;
+
+                .product-price {
+                    p {
+                        font-size: 30px;
+                    }
+                }
+
+                .product-reviews-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                }
+            }
+            .product-status{
+                p{
+                    color: orange;
+                }
+            }
+            .product-description{
+                p{
+                    color: rgb(185, 185, 185);
+                }
+            }
+            .product-badges{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                p{
+                    strong{
+                        color: orange;
+                    }
+                }
+            }
+            .product-action-btns{
+                button{
+                    border-radius: 9px;
+                    background-color: rgb(70, 70, 70);
+                    color: white;
+                    height: 50px;
+                    font-size: 18px;
+                }
+                button:hover{
+                    background-color: rgb(99, 99, 99);
+                }
+                button.buy-now-btn{
+                    background-color: white;
+                    color: black;
+                    flex: 1;
+                }
+                button.BuyNow:hover{
+                    background-color: rgb(240, 240, 240);
+                }
+            }
+        }
+    }
+    .Main-ProductReviews{
+        padding: 20px;
+        align-items: start !important;
+        gap: 20px;
+        .ProductReview{
+            gap: 15px;
+            .User-Profile{
+                img{
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+            .UserName-ReviewStars{
+                p{
+                }
+                .Stars{
+                    svg{
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                .User-Review{
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.main-cart {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    .cart-table {
+
+    }
+    .cart-summary {
+        background-color: var(--dark-secondary-bg);
+        padding: 10px;
+        border-radius: 9px;
+    }
+}

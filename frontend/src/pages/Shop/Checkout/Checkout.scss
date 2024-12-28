@@ -1,0 +1,120 @@
+main.checkout{
+    padding: 0;
+    .main-checkout{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .left-side,
+        .right-side{
+            width: 50%;
+            padding: 20px 0;
+        }
+        .product-containers{
+            margin-left: 20px;
+        }
+        .checkout-containers{
+            margin-right: 20px;
+        }
+        .checkout-forms{
+            background-color: rgb(34, 34, 34);
+            display: flex;
+            align-items: start;
+            justify-content: end;
+            .checkout-containers{
+                width: 400px;
+                .title{
+                    h1{
+                        color: white;
+                    }
+                }
+                .description{
+                    h6{
+                        color: white;
+                    }
+                }
+                .primary-input-container{
+                }
+                .secondary-input-container{
+                    display: flex;
+                    justify-content: space-between;
+                    input{
+                        width: 49%;
+                    }
+                }   
+                input{
+                    width: 100%;
+                }
+                .contact-container,
+                .delivery-container,
+                .payment-container,
+                .payment-form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .contact-container{
+                }
+                .delivery-container{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                .payment-container{
+                    .payment-form{
+                        .payment-header{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            span{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product-details{
+            .product-containers{
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .product-image-name-price{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .product-image-name{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        .product-image{
+                            background-color: black;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 9px;
+                            padding: 5px;
+                            img{
+                                height: 80px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+                .discount-code-container{
+                    display: flex;
+                    flex-direction: column;
+                    .discount-code-input-button{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        input{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

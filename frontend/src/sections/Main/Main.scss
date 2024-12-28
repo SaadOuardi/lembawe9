@@ -44,11 +44,12 @@ section.main {
                 flex-wrap: wrap;
 
                 .hireme-btn, .cv-btn {
-                    width: 150px;
+                    width: 250px;
                 }
                 .cv-btn {
                     background: transparent;
                     border: 2px solid var(--main-color);
+                    border-radius: 4px;
                     svg, a {
                         color: var(--main-color) !important;
                     }

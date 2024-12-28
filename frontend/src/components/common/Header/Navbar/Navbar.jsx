@@ -4,7 +4,7 @@ import './Navbar.scss';
 export const Navbar = ({handleTakeMeUp}) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const navItems = ["home", "about", "skills", "services", "resume", "portfolio", "contact"];
+    const navItems = ["home", "events", "music", "contact", "merch"];
 
     const handleClick = (index) => {
         setActiveIndex(index);
@@ -18,8 +18,8 @@ export const Navbar = ({handleTakeMeUp}) => {
 
     useEffect(() => {
         const observerOptions = {
-            root: null, // Use the viewport as the root
-            threshold: 0.6, // Trigger when 60% of the section is visible
+            root: null,
+            threshold: 0.6,
         };
 
         const observer = new IntersectionObserver((entries) => {

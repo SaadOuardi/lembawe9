@@ -1,30 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Header } from '../src/components/common/Header/Header';
-import { Main } from "./sections/Main/Main";
-import { About } from "./sections/About/About";
-import { SkillSection } from "./sections/Skills/Skills";
-import { ServicesSection } from "./sections/Services/Services";
-import { ResumeSection } from "./sections/Resume/Resume";
-import { Portfolio } from "./sections/Portfolio/Portfolio";
-import { ContactSection } from "./sections/Contact/Contact";
 import { Footer } from '../src/components/common/Footer/Footer';
-import { TakeMeUp } from '../src/components/common/TakeMeUp/TakeMeUp';
+import Home from "./pages/Home/Home";
+import ProducutList from  './pages/Shop/ProductList/ProductList';
 
 const App = () => {
   return (
     <>
-      <Header/>
-      <main>
-        <Main/>
-        <About/>
-        <SkillSection/>
-        <ServicesSection/>
-        <ResumeSection/>
-        <Portfolio/>
-        <ContactSection/>
+      <Router>
+        <Header/>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/shop" exact component={ProducutList} />
+        </Switch>
         <Footer/>
-        <TakeMeUp/>
-      </main>
+      </Router>
     </>
   );
 };

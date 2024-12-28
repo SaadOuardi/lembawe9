@@ -1,0 +1,105 @@
+.menu-container{
+    width: 100%;
+    display: flex !important;
+    align-items: start !important;
+    .active{
+        background-color: var(--main-hover);
+        color: black !important;
+    }
+    .product-filter{
+        background-color: transparent;
+        border: 2px solid white;
+        width: 200px;
+        gap: 0 !important;
+        .product-filter-container{
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-y: hidden;
+        }
+        .filter-container{
+            width: 100%;
+            padding: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s linear;
+            p{
+                color: white;
+            }
+        }
+        .filter-container:hover{
+            background-color: var(--main-hover);
+        }
+    }
+    .product-search-sort-list{
+        .product-search-sort{
+            width: 100%;
+            .product-search {
+                flex: 1;
+                input {
+                    width: 50%;
+                    background-color: var(--main-bg);
+                    flex: 1;
+                }
+                input::placeholder {
+                    color: white;
+                }
+            }
+        }
+        .product-list{
+            width: 1200px;
+            .Product {
+                width: 390px;
+            }
+        }
+    }
+}
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    .menu-container{
+        .product-filter{
+            width: 100%;
+            .product-filter-container{
+                flex-direction: row !important;
+                height: 150px;
+                overflow-x: scroll;
+                .filter-container{
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+    .menu-container{
+        .product-filter{
+            width: 100%;
+            .product-filter-container{
+                flex-direction: row !important;
+                height: 150px;
+                overflow-x: scroll;
+                .filter-container{
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+    .menu-container{
+        .product-filter{
+            width: 100%;
+            .product-filter-container{
+                flex-direction: row !important;
+                height: 150px;
+                overflow-x: scroll;
+                .filter-container{
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+}

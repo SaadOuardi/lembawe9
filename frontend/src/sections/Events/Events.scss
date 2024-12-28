@@ -1,0 +1,11 @@
+section.events{
+    padding: 0;
+    .video-container {
+        width: 100%;
+        .youtube-video {
+            aspect-ratio: 16/9;
+            box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.5);
+            border-radius: 16px;
+        }
+    }
+}
