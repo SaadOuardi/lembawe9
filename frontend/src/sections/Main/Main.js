@@ -37,7 +37,7 @@ export const Main = () => {
                                     <h5>The official Lembawe9 Web page featuring exclusive <br/>music video premieres, live events, unique content.<br/>No words needed.<br/></h5>
                                 </div>
                             </div>
-                            <div className="buttons-container Flex-Center">
+                            <div className="buttons-container d-flex gap-2">
                                 <button 
                                     className="hireme-btn"
                                     onClick={handleClick}

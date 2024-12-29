@@ -1,4 +1,4 @@
-section.events{
+section.events {
     padding: 0;
     .video-container {
         width: 100%;
@@ -8,4 +8,17 @@ section.events{
             border-radius: 16px;
         }
     }
+}
+
+/*----------------------MOBILE DEVICES----------------------*/
+@media screen and (max-width: 768px) {
+}
+/*----------------------TABLET DEVICES----------------------*/
+@media only screen and (max-width: 768px ) and (max-width:1023px) {
+}
+/*----------------------LAPTOP DEVICES----------------------*/
+@media only screen and (max-width: 1024px ) and (max-width:1439px) {
+}
+/*----------------------DESCKTOP DEVICES----------------------*/
+@media only screen and (max-width: 1440px ) {
 }

@@ -1,11 +1,10 @@
 section.contact {
-    form{
-        .Form{
+    form {
+        .form-container {
             width: 100%;
             flex-wrap: wrap;
-            .Form-Inputs{
-                flex-direction: column;
-                .input__container{
+            .form-inputs {
+                .input-container{
                     position: relative;
                     svg{
                         height: 30px;
@@ -21,11 +20,12 @@ section.contact {
                     }
                 }
             }
+
+            .form-submit{
+                padding: 10px;
+            }
         }
     
-        .Submit-Input{
-            padding: 10px;
-        }
     
         input, textarea {
             width: 400px;
@@ -53,7 +53,7 @@ section.contact {
         
         input:hover,
         textarea:hover{
-            // box-shadow: .1px .1px 5px var(--secondary-color-LM);
+            box-shadow: .1px .1px 5px red;
         }
     
         input:focus,
@@ -80,7 +80,9 @@ section.contact {
 
 /*---------------------- MOBILE VERSION----------------------*/
 @media screen and (max-width: 768px){
-    form{
-        width: 100%;
+    form {
+        input, textarea {
+            width: 300px !important;
+        }
     }
 }

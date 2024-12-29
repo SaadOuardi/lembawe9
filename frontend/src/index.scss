@@ -58,6 +58,7 @@ html {
 body {
     background-color: var(--primary-bg);
 }
+
 section {
     background-color: var(--primary-bg);
     width: 100%;
@@ -67,18 +68,18 @@ section {
     flex-direction: column;
     padding: 20px;
     gap: 20px;
-    .section-content{
+    .section-content {
         width: 1440px;
         position: relative;
         padding: 20px;
     }
 }
 
-section.main-section{
+section.main-section {
     background-color: white;
 }
 
-section.secondary-section{
+section.secondary-section {
     background: var(--secondary-bg) !important;
 }
 
@@ -213,9 +214,11 @@ svg {
     justify-content: start;
     gap: 8px;
 }
+
 .flex-column{
     flex-direction: column;
 }
+
 .Flex-Center{
     display: flex;
     flex-wrap: wrap;
@@ -223,6 +226,7 @@ svg {
     justify-content: center;
     gap: 10px;
 }
+
 .Flex-Column{
     flex-direction: column;
 }
@@ -267,137 +271,37 @@ svg {
 .fadeIn {
     animation: fadeIn 1s linear;
 }
-/*----------- SECTIONS STYLES ------------------*/
-.section__title_div{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.section__title{
-    font-size: 100px;
-    font-weight: 800;
-    font-style: normal;
-    padding: 20px;
-}
-
-.section__title_description{
-    font-size: 40px;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.section{
-    font-size: 20px;
-    font-weight: 600;
-    font-style: normal;
-}
 
 /*-----------MOBILE DEVICE-----------*/
 @media screen and (max-width: 768px){
     section{
-        .section-content{
+        padding: 5px;
+        .section-content {
+            padding: 0;
             width: 100%;
         }
-    }
-    /* NAVBAR */
-    .mobile__navbar{
-        display: block;
-    }
-    .navbar{
-        display: none;
-    }
-    .input-list__container{
-        width: 300px;
-    }
-    .main__section1{
-        padding: 0;
-    }
-    .section__title{
-        font-size: 50px;
-        font-weight: 800;
-        font-style: normal;
-    }
-    .section1__about_me h1,
-    .section1__about_me h3,
-    .section1__about_me h5{
-        text-align: start;
-    }
-
-    /*------------ SECTION : MY SKILLS  ------------*/
-
-    .section__title_div h1{
-        font-size: 50px;
-    }
-    .section__title_div h6{
-        text-align: center;
-        font-size: 30px;
-    }
-    .bio__container{
-        width: 80%;
-    }
-
-    /*------------ SECTION : MAIN  ------------*/
-    .section1__about_me h1{
-        text-align: center;
-    }
-    .section1__about_me h3{
-        text-align: center;
-        font-size: 20px;
-    }
-    .section1__about_me h5{
-        text-align: center;
-        font-size: 16px;
-    }
-    .section1__about_me div{
-        width: 300px;
-    }
-    /* TAKE ME UP */
-    .icon__TakeMeup{
-        display: none;
-        position: fixed;
-        top: 80%;
-        left: 80%;
-    }
-    .copyright__container p{
-        text-align: center;
-        font-size: 15px;
     }
 }
 /*-----------TABLET DEVICE----------- */
 @media only screen and (max-width: 768px ) and (max-width:1023px){
-    section{
-        .section-content{
+    section {
+        .section-content {
             width: 100%;
         }
-    }
-    .section__div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 /*-----------LAPTOP DEVICE----------- */
 @media only screen and (max-width: 1024px ) and (max-width:1439px){
-    section{
-        .section-content{
+    section {
+        .section-content {
             width: 100%;
         }
-    }
-    /* ----MAIN SECTION---- */
-    .section1__about_me h1,
-    .section1__about_me h3,
-    .section1__about_me h5{
-        text-align: center;
     }
 }
 /*-----------DESCKTOP DEVICE----------- */
 @media only screen and (max-width: 1440px ){
-    section{
-        .section-content{
+    section {
+        .section-content {
             width: 100%;
         }
     }
